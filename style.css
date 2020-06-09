@@ -1,6 +1,51 @@
+:root{
+    /* color */
+    --color-black:#000000;
+    --color-light-black:#262626;
+    --color-gray:#8e8e8e;
+    --color-light-blue:#0095f6;
+    --color-ligth-red:#ed4956;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;   
+}
+
+/* Navbar */
+
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    padding: 0 20px;
+    font-size: 23px;
+}
+
+
+
 .navbar_search_input{
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
 }
+
+.navbar_search_input::placeholder{
+    text-align: center;
+}
+
+.navbar_menu_list {
+    display: flex;
+    list-style: none;    
+}
+
+.navbar_menu_list li {
+    padding-left: 16px;
+}
+
