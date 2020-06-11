@@ -4,6 +4,7 @@
     --color-light-black:#262626;
     --color-gray:#8e8e8e;
     --color-light-gray:#c9c3c3;
+    --color-white-gray:#fafafa;
     --color-light-blue:#0095f6;
     --color-ligth-red:#ca105d;
     --color-dark-pink:#ca105d;
@@ -15,7 +16,8 @@
 }
 
 body {
-    margin: 0;   
+    margin: 0; 
+    background-color: var(--color-white-gray);  
 }
 
 img {
@@ -69,8 +71,45 @@ img {
 }
 
 /* Feed Main */
+#main_content {    
+    display: flex;
+    padding-top: 30px;
+    margin: 0 80px;
+}
+
+.main_left_menu {
+    margin-right: 28px;
+}
+
 .feed_img{
     border-radius: 0;
     border-style: none;
+    width: 614px;
+    height: 614px;
 }
+
+/* Story */
+.main_story {
+    margin-bottom: 24px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    padding: 10px;
+}
+
+.main_story_list {    
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    
+}
+
+.main_story_img_list {
+    text-align: center;    
+}
+
+.story_profile_name {
+    font-size: 12px;
+    color: var(--color-light-black);
+}
+
 
