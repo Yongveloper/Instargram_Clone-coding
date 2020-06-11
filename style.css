@@ -6,9 +6,11 @@
     --color-light-gray:#c9c3c3;
     --color-white-gray:#fafafa;
     --color-light-blue:#0095f6;
-    --color-ligth-red:#ca105d;
+    --color-light-red:#ca105d;
     --color-dark-pink:#ca105d;
     --color-white: #ffffff;
+    --color-hash-tag:#00376b;
+    --color-border:#d9d9d9;
 }
 
 * {
@@ -56,7 +58,7 @@ i {
     position: fixed;
     top: 0;
     background-color: var(--color-white);
-    border-bottom: 1px solid var(--color-light-gray);
+    border-bottom: 1px solid var(--color-border);
     font-size: 1.3em;
 }
 
@@ -132,7 +134,8 @@ i {
 .main_story {
     margin-bottom: 24px;
     background-color: var(--color-white);
-    border: 1px solid var(--color-light-gray);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
     padding: 10px;
 }
 
@@ -159,7 +162,9 @@ i {
 }
 
 .main_feed_profile {
-    border: 1px solid var(--color-light-gray);
+    border: 1px solid var(--color-border);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     border-bottom: none;
     padding: 16px;
 }
@@ -189,8 +194,68 @@ i {
     align-items: flex-start;
 }
 
+.main_feed_img {
+    height: 614px;
+}
 
+/* Feed Info (Bottom) */
 .main_feed_explanation {
-    border: 1px solid var(--color-light-gray);
+    border: 1px solid var(--color-border);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     border-top: none;
+}
+
+.main_feed_explanation_icon {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 24px;
+    padding: 0 16px;
+    
+}
+
+.main_feed_explanation_icon span {
+    margin-right: 18px;
+}
+
+#book_mark {
+    margin-left: 430px;
+    margin-right: 0;
+}
+
+.main_feed_likes {
+    font-size: 14px;
+    color: var(--color-light-black);
+    padding: 0 16px;
+}
+
+.main_feed_like_count {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.main_feed_commentes_name,
+.main_feed_comment_count,
+.main_feed_comment,
+.main_feed_time {
+    margin-bottom: 4px;
+}
+
+.more_view {
+    color: var(--color-gray);
+    cursor: pointer;
+}
+
+.main_feed_comment_count {
+    color: var(--color-gray);
+}
+
+.hash_tag {
+    color: var(--color-hash-tag);
+}
+
+.main_feed_time {
+    font-size: 10px;
+    color: var(--color-gray);
 }
