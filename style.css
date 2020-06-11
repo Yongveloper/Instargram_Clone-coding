@@ -9,7 +9,10 @@
     --color-light-red:#ca105d;
     --color-dark-pink:#ca105d;
     --color-white: #ffffff;
-    --color-hash-tag:#00376b;
+    --color-hash-tag:#00376b;    
+
+    /* Border */
+    --border-radius:3px;
     --color-border:#d9d9d9;
 }
 
@@ -55,6 +58,7 @@ i {
 
 #navbar {
     width: 100%;
+    height: 53px;
     position: fixed;
     top: 0;
     background-color: var(--color-white);
@@ -63,24 +67,39 @@ i {
 }
 
 .navbar_container {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .navbar_container_2 {
+    height: 100%;
     width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center;        
-    height: 56px;
+    
 }
 
 .navbar_logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
     font-family: 'Metal Mania', cursive;
     font-size: 17px;
     cursor: pointer;
     user-select: none;
+}
+
+.navbar_menu h1 {
+    margin: 0;
+}
+
+.navbar_search {
+    height: 100%;    
+    display: flex;
+    align-items: center;
 }
 
 .navbar_search_input{
@@ -91,19 +110,30 @@ i {
     height: 25px;
     line-height: 25px;
     padding: 3px 6px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
 }
 
 .navbar_search_input::placeholder{
     text-align: center;
 }
 
+.navbar_menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
 .navbar_menu_list {
     display: flex;
-    list-style: none;    
+    list-style: none;
+    margin: 0;    
+    padding: 0;
 }
 
 .navbar_menu_list li {
-    padding-left: 16px;
+    padding-left: 20px;
 }
 
 /* Feed Main */
@@ -135,7 +165,7 @@ i {
     margin-bottom: 24px;
     background-color: var(--color-white);
     border: 1px solid var(--color-border);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     padding: 10px;
 }
 
@@ -163,8 +193,8 @@ i {
 
 .main_feed_profile {
     border: 1px solid var(--color-border);
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
     border-bottom: none;
     padding: 16px;
 }
@@ -201,8 +231,8 @@ i {
 /* Feed Info (Bottom) */
 .main_feed_explanation {
     border: 1px solid var(--color-border);
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
     border-top: none;
 }
 
