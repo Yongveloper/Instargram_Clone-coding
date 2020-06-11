@@ -28,6 +28,27 @@ img {
     user-select: none;
 }
 
+i {
+    cursor: pointer;
+}
+
+.main_left_menu,
+.footer_menu {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.name,
+.small_name {
+    font-size:14px;
+    font-weight: 600;    
+    color: var(--color-light-black);
+}
+
+.small_name {
+    font-size:12px;
+    font-weight: normal;    
+}
+
 /* Navbar */
 
 #navbar {
@@ -131,4 +152,45 @@ img {
     color: var(--color-light-black);
 }
 
+/* Main Feed */
+.main_feed {
+    background-color: var(--color-white);
+    margin-bottom: 60px;    
+}
 
+.main_feed_profile {
+    border: 1px solid var(--color-light-gray);
+    border-bottom: none;
+    padding: 16px;
+}
+
+.main_feed_profile_img_info {
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.main_feed_profile_img{
+    display: flex;
+}
+
+.main_feed_name-view {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.main_feed_profile_name{    
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-start;
+}
+
+
+.main_feed_explanation {
+    border: 1px solid var(--color-light-gray);
+    border-top: none;
+}
