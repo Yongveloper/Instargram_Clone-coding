@@ -75,7 +75,7 @@ i {
 
 .navbar_container_2 {
     height: 100%;
-    width: 75%;
+    width: 915px;
     display: flex;
     justify-content: space-between;
     align-items: center;        
@@ -139,17 +139,17 @@ i {
 /* Feed Main */
 #main_container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;    
 }
 
 #main_content {    
     display: flex;
     padding-top: 30px;
-    margin: 0 auto;
+       
 }
 
 .main_left_menu {
+    max-width: 600px;
     margin-right: 28px;
 }
 
@@ -199,8 +199,11 @@ i {
     align-items: center;    
 }
 
-.main_feed_profile_img{
-    display: flex;
+
+.feed_img{
+    display: table-row;
+    border-radius: 0;
+    border-style: none;      
 }
 
 .main_feed_name-view {
@@ -217,10 +220,6 @@ i {
     align-items: flex-start;
 }
 
-.feed_img{
-    border-radius: 0;
-    border-style: none;      
-}
 
 /* Feed Info (Bottom) */
 .main_feed_explanation {
@@ -244,8 +243,8 @@ i {
 }
 
 #book_mark {
-    margin-left: 430px;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: 0px;
 }
 
 .main_feed_likes {
@@ -322,6 +321,10 @@ i {
     font-size: 12px;    
 }
 
+.footer_recommend_view span {
+    font-weight: 600;
+}
+
 .footer_recommend_menu {
     margin-left: -16px;
     margin-bottom: 12px;
@@ -345,6 +348,7 @@ i {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 48px;
     padding: 8px 16px;
 }
 
@@ -359,13 +363,14 @@ i {
     margin-right: 12px;
 }
 
-.rec_follower {
+.rec_follower {    
     color: var(--color-gray);
 }
 
 .footer_recommend_list_follow .small_name {
     color: var(--color-light-blue);
     font-weight: 600;
+    cursor: pointer;
 }
 
 .footer_footer {
@@ -375,6 +380,7 @@ i {
 }
 
 .footer_footer_terms{
+    margin-top: 30px;
     margin-bottom: 16px;
 }
 
@@ -392,10 +398,46 @@ i {
     .main_left_menu {
         margin-right: 0;
     }
+
+    .navbar_container_2 {
+        width: 100%;
+        padding: 0 20px;
+    }
 }
 
 @media screen and (max-width: 736px) {
     .main_feed_comment_input {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .navbar_container_2{
+        width: 100%;        
+    }
+
+    #main_content {
+        width: 100%;
+        padding-top: 1px;
+    }
+
+    .main_left_menu,
+    .feed_img {
+        width: 100%;
+    }
+
+    .main_feed_profile,
+    .main_feed_explanation {
+        background: none;
+        border: none;
+    }
+
+    .navbar_search {
+        display: none;
+    }
+
+    .main_story {
         display: none;
     }
 }
