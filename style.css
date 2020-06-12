@@ -75,7 +75,7 @@ i {
 
 .navbar_container_2 {
     height: 100%;
-    width: 75%;
+    width: 942px;
     display: flex;
     justify-content: space-between;
     align-items: center;        
@@ -166,14 +166,12 @@ i {
     background-color: var(--color-white);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
-    padding: 10px;
+    padding: 16px 10px;
 }
 
 .main_story_list {    
     display: flex;
-    justify-content: space-between;
-    padding: 6px 0;
-    
+    justify-content: space-between;   
 }
 
 .main_story_img_list {
@@ -257,10 +255,11 @@ i {
 .main_feed_likes {
     font-size: 14px;
     color: var(--color-light-black);
-    padding: 0 16px;
+    
 }
 
 .main_feed_like_count {
+    padding: 0 16px;
     margin-bottom: 8px;
     font-weight: 600;
 }
@@ -270,6 +269,7 @@ i {
 .main_feed_comment,
 .main_feed_time {
     margin-bottom: 4px;
+    padding: 0 16px;
 }
 
 .more_view {
@@ -288,4 +288,100 @@ i {
 .main_feed_time {
     font-size: 10px;
     color: var(--color-gray);
+}
+
+.main_feed_comment_input {
+    margin-top: 4px;
+    padding: 0 16px;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* Footer */
+
+.footer_menu {
+    margin-bottom: 30px;
+}
+
+.footer_menu_profile_img_name {
+    display: flex;
+    align-items: center;
+    margin: 18px 0;
+    padding-left: 5px;
+}
+
+.footer_menu_profile_img {
+    display: flex;
+    border: none;
+}
+
+.footer_menu_profile_img  img{
+    border: none;
+}
+
+.footer_menu_profile_name {
+    margin-left: 20px;
+}
+
+.footer_menu_profile_img_name .footer_nickname {
+    font-size: 12px;    
+}
+
+.footer_recommend_menu {
+    margin-left: -16px;
+    margin-bottom: 12px;
+}
+
+.footer_recommend_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 16px;
+    margin-top: 12px;
+}
+
+.footer_recommend_logo_recommentation{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-gray);
+}
+
+.footer_recommend_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.footer_img-name {
+    display: flex;
+}
+
+.footer_recommend_list_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.rec_follower {
+    color: var(--color-gray);
+}
+
+.footer_recommend_list_follow .small_name {
+    color: var(--color-light-blue);
+    font-weight: 600;
+}
+
+.footer_footer {
+    font-size: 11px;
+    color: #c7c7c7;
+    padding-bottom: 30px;
+}
+
+.footer_footer_terms{
+    margin-bottom: 16px;
+}
+
+.footer_footer_terms p{
+    margin: 0;
 }
