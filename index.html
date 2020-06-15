@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/4717caeefe.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">        
     <title>Yongstargram</title>
 </head>
 
@@ -149,7 +149,8 @@
                                 <section class="main_feed_explanation_icon">
 
 
-                                    <span><i class="far fa-heart"></i></span>
+                                    <span class="like-btn like-null-btn"><i class="far fa-heart"></i></span>
+                                    <span class="like-btn like-action-btn hide"><i class="fas fa-heart"></i></span>
                                     <span><i class="far fa-comment"></i></span>
                                     <span><i class="far fa-paper-plane"></i></span>
 
@@ -161,7 +162,7 @@
 
                                 <section class="main_feed_likes">
                                     <div class="main_feed_like_count">
-                                        <span>좋아요 1,294개</span>
+                                        <span id="like-count">좋아요 1,294개</span>
                                     </div>
 
                                     <div class="main_feed_commentes">
@@ -239,7 +240,8 @@
                                 <section class="main_feed_explanation_icon">
 
 
-                                    <span><i class="far fa-heart"></i></span>
+                                    <span class="like-btn like-null-btn2"><i class="far fa-heart"></i></span>
+                                    <span class="like-btn like-action-btn2 hide"><i class="fas fa-heart"></i></span>
                                     <span><i class="far fa-comment"></i></span>
                                     <span><i class="far fa-paper-plane"></i></span>
 
@@ -251,7 +253,7 @@
 
                                 <section class="main_feed_likes">
                                     <div class="main_feed_like_count">
-                                        <span>좋아요 1,294개</span>
+                                        <span id="like-count2">좋아요 3,349개</span>
                                     </div>
 
                                     <div class="main_feed_commentes">
@@ -325,7 +327,8 @@
                                 <section class="main_feed_explanation_icon">
 
 
-                                    <span><i class="far fa-heart"></i></span>
+                                    <span class="like-btn like-null-btn3"><i class="far fa-heart"></i></span>
+                                    <span class="like-btn like-action-btn3 hide"><i class="fas fa-heart"></i></span>
                                     <span><i class="far fa-comment"></i></span>
                                     <span><i class="far fa-paper-plane"></i></span>
 
@@ -337,7 +340,7 @@
 
                                 <section class="main_feed_likes">
                                     <div class="main_feed_like_count">
-                                        <span>좋아요 1,294개</span>
+                                        <span id="like-count3">좋아요 2,999개</span>
                                     </div>
 
                                     <div class="main_feed_commentes">
@@ -380,8 +383,8 @@
 
             <!-- Footer Menu -->
             
-            <div class="footer_menu">
-                <div class="footer_menu_profile_img_name">
+            <footer class="footer_menu">
+                <div class="footer_menu_profile_img-name">
                     <div class="footer_menu_profile_img">
                         <img src="footer_img/footer_profile.jpg" />
                     </div>
@@ -512,10 +515,11 @@
                         <span>©2020 YONGSTARGRAM FROM FACEBOOK</span>
                     </div>
                 </div>
-            </div>
+            </footer>
         
         </section>
     </main>
+    <script defer src="like_button.js"></script>
 </body>
 
 </html>
