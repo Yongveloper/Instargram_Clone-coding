@@ -235,14 +235,16 @@ i {
     
 }
 
+
 .like-action-btn,
 .like-action-btn2,
-.like-action-btn3 {    
-    color:#ed4956;
+.like-action-btn3 {       
+    color:#ed4956;    
 }
 
-.hide {    
-    display: none;    
+.hide {        
+    display: none;
+    color:var(--color-white);      
 }
 
 .main_feed_explanation_icon span {
@@ -296,6 +298,33 @@ i {
     margin-top: 4px;
     padding: 0 16px;
     border-top: 1px solid #f0f0f0;
+}
+
+.comment_input_form {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;    
+}
+
+.comment_input_text {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.comment_input_button {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--color-light-blue);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.comment_input_button:disabled {
+    opacity: .3;
+    pointer-events: none;
 }
 
 /* Footer */

@@ -1,6 +1,5 @@
 'use strict';
 
-
 const likeNullBtn = document.querySelector('.like-null-btn');
 const likeNullBtn2 = document.querySelector('.like-null-btn2');
 const likeNullBtn3 = document.querySelector('.like-null-btn3');
@@ -19,86 +18,35 @@ const likeCount3= document.querySelector('#like-count3');
 function nullFunction(elm) {     
     const nullBtn = document.querySelector('.'+elm);          
     nullBtn.classList.add(CLICKED_CLASS);
-    if(elm==='like-null-btn'){
-    likeActionBtn.classList.remove(CLICKED_CLASS);
-    likeCount.innerHTML = "좋아요 1,295개";
-    } else if (elm==='like-null-btn2') {
+
+    if(elm === 'like-null-btn'){
+        likeActionBtn.classList.remove(CLICKED_CLASS);
+        likeCount.innerHTML = "5";
+
+    } else if (elm === 'like-null-btn2') {
         likeActionBtn2.classList.remove(CLICKED_CLASS);
-        likeCount2.innerHTML = "좋아요 3,350개";
+        likeCount2.innerHTML = "50";
+
     } else {
         likeActionBtn3.classList.remove(CLICKED_CLASS);
-        likeCount3.innerHTML = "좋아요 3,000개";
+        likeCount3.innerHTML = "3,000";
     }
 };
 
 function actionFunction(elm) { 
     const actionBtn = document.querySelector('.'+elm);    
     actionBtn.classList.add(CLICKED_CLASS);
-    if(elm==='like-action-btn'){
-    likeNullBtn.classList.remove(CLICKED_CLASS);
-    likeCount.innerHTML = "좋아요 1,294개";
-    } else if (elm==='like-action-btn2'){
+
+    if(elm === 'like-action-btn'){
+        likeNullBtn.classList.remove(CLICKED_CLASS);
+        likeCount.innerHTML = "4";
+
+    } else if (elm === 'like-action-btn2'){
         likeNullBtn2.classList.remove(CLICKED_CLASS);
-        likeCount2.innerHTML = "좋아요 3,349개";
+        likeCount2.innerHTML = "49";
+        
     } else {
         likeNullBtn3.classList.remove(CLICKED_CLASS);
-        likeCount3.innerHTML = "좋아요 2,999개";
+        likeCount3.innerHTML = "2,999";
     }
 };
-
-
-function init() {
-    
-}
-init();
-
-/*
-likeNullBtn.addEventListener('click', ()=> {
-    likeNullBtn.classList.add(CLICKED_CLASS);
-    likeActionBtn.classList.remove(CLICKED_CLASS);
-    likeCount.innerHTML = "좋아요 1,295개";
-});
-
-likeActionBtn.addEventListener('click', ()=>{
-    likeActionBtn.classList.add(CLICKED_CLASS);
-    likeNullBtn.classList.remove(CLICKED_CLASS);
-    likeCount.innerHTML = "좋아요 1,294개";
-});
-
-
-const likeNullBtn2 = document.querySelector('.like-null-btn2');
-const likeActionBtn2 = document.querySelector('.like-action-btn2');
-const likeCount2= document.querySelector('#like-count2');
-
-
-
-likeNullBtn2.addEventListener('click', ()=> {
-    likeNullBtn2.classList.add(CLICKED_CLASS);
-    likeActionBtn2.classList.remove(CLICKED_CLASS);
-    likeCount2.innerHTML = "좋아요 3,350개";
-});
-
-likeActionBtn2.addEventListener('click', ()=>{
-    likeActionBtn2.classList.add(CLICKED_CLASS);
-    likeNullBtn2.classList.remove(CLICKED_CLASS);
-    likeCount2.innerHTML = "좋아요 3,349개";
-});
-
-const likeNullBtn3 = document.querySelector('.like-null-btn3');
-const likeActionBtn3 = document.querySelector('.like-action-btn3');
-const likeCount3= document.querySelector('#like-count3');
-
-
-
-likeNullBtn3.addEventListener('click', ()=> {
-    likeNullBtn3.classList.add(CLICKED_CLASS);
-    likeActionBtn3.classList.remove(CLICKED_CLASS);
-    likeCount3.innerHTML = "좋아요 3,000개";
-});
-
-likeActionBtn3.addEventListener('click', ()=>{
-    likeActionBtn3.classList.add(CLICKED_CLASS);
-    likeNullBtn3.classList.remove(CLICKED_CLASS);
-    likeCount3.innerHTML = "좋아요 2,999개";
-});
-*/
