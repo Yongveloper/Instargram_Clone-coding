@@ -1,11 +1,14 @@
 'use strict';
+// Put on hold
 
 const test = document.querySelector('.comment_input_text');
 const testBtn= document.querySelector('.comment_input_button');
 
 
-test.addEventListener('keypress', ()=>{
-   console.log('hi');
-   testBtn.disabled=false;
-});
+function actionInput (elm) {
+   console.log(elm);
+   const name = document.querySelectorAll('.'+elm);
+   console.log(name[0]);
+   
+}
 
