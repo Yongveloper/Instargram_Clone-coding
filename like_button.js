@@ -1,29 +1,25 @@
 'use strict';
 
-const likeBtn   = document.querySelectorAll('.heart');
+// Like Button Event
 
-[].forEach.call(likeBtn, function(likeBtn){
-    likeBtn.addEventListener("click",btnClick,false) ;
-}) ;
+const LIKE_BUTTON = document.querySelectorAll('.heart');
 
-function btnClick(e){    
+function btnClickHandler () {
     
-    const likeIcon = e.path[0]        
+    const likeCount = this.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].childNodes[1].childNodes[1]; 
 
-    const likeCount=likeIcon.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].childNodes[1].childNodes[1];        
-
-    let likeCountInt;
-
-    if(likeIcon.classList.contains('fa-heart-o')){
-    likeCountInt= parseInt(likeCount.innerHTML)+1;
-    
+    const likeCountInt = parseInt(likeCount.innerHTML);
+       
+    if(this.classList.contains('fa-heart-o')){        
+    likeCount.innerHTML= likeCountInt+1;    
     } else{
-    likeCountInt= parseInt(likeCount.innerHTML)-1;
-    
-    };
-
-    likeCount.innerHTML=likeCountInt;
+    likeCount.innerHTML= likeCountInt-1;    
+    };    
      
-    likeIcon.classList.toggle('fa-heart-o');
-    likeIcon.classList.toggle('fa-heart');      
+    this.classList.toggle('fa-heart-o');
+    this.classList.toggle('fa-heart');      
+}
+
+for (let i=0; i < LIKE_BUTTON.length; i++) {
+    LIKE_BUTTON[i].addEventListener('click',btnClickHandler);
 }

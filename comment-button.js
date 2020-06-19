@@ -1,14 +1,26 @@
 'use strict';
-// Put on hold
 
-const test = document.querySelector('.comment_input_text');
-const testBtn= document.querySelector('.comment_input_button');
+const COMMENT_ADD = document.querySelectorAll('.comment_input_text');
 
+function postComment() {   
 
-function actionInput (elm) {
-   console.log(elm);
-   const name = document.querySelectorAll('.'+elm);
-   console.log(name[0]);
-   
+   if(window.event.keyCode === 13){     
+      const newComment = this.value;
+      
+      const commentList = this.parentNode.parentNode.parentNode.childNodes[7];       
+      
+      const newDiv = document.createElement("div");      
+      
+      newDiv.classList.add('main_feed_comment');
+      commentList.append(newDiv);
+      newDiv.innerHTML = `<span class="name">yoo.__.oong </span><span>${newComment}</span>`;      
+
+      this.value = '';    
+      this.blur()
+   }
+
 }
 
+for (let i = 0; i < COMMENT_ADD.length; i++){   
+   COMMENT_ADD[i].addEventListener('keydown',postComment);
+}
