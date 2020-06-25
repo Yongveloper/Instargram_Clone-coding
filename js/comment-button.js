@@ -1,8 +1,10 @@
 'use strict';
 
+// Post Comment
+
 const COMMENT_ADD = document.querySelectorAll('.comment_input_text');
 
-function postComment() {   
+function commentHandler() {   
 
    if(window.event.keyCode === 13){     
       const newComment = this.value;
@@ -16,11 +18,11 @@ function postComment() {
       newDiv.innerHTML = `<span class="name">yoo.__.oong </span><span>${newComment}</span>`;      
 
       this.value = '';    
-      this.blur()
+      this.blur();
    }
 
 }
 
 for (let i = 0; i < COMMENT_ADD.length; i++){   
-   COMMENT_ADD[i].addEventListener('keydown',postComment);
+   COMMENT_ADD[i].addEventListener('keydown',commentHandler);
 }

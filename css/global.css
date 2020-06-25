@@ -29,12 +29,12 @@ body {
 }
 
 main {
-    animation: .6s fadeMain linear;
+    animation: .8s fadeIn ;
 }
 
-@keyframes fadeMain{
+@keyframes fadeIn{
 	from{
-		transform: translateY(20px);
+		transform: translateY(30px);
 		opacity: 0;
 	}
 	to{

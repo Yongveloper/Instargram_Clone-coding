@@ -51,11 +51,12 @@ body {
     border: none;
     border-radius: var(--border-radius);
     background: var( --color-light-blue);
+    padding: 10px 30px;
     font-size: 14px;
     font-weight: 600;
-    color: var(--color-white);
-    padding: 10px 30px;
+    color: var(--color-white);    
     cursor: pointer;
+    transition: all 200ms ease;
 }
 
 .login_button button:hover{    

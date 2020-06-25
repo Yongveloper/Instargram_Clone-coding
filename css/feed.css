@@ -19,7 +19,7 @@
 
 .navbar_container {
     height: 100%;
-    width: 915px;
+    width: 935px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -264,6 +264,7 @@
 .comment_input_text {
     width: 100%;
     height: 24px;
+    overflow: hidden;
     outline: none;
     border: none;
     resize: none;

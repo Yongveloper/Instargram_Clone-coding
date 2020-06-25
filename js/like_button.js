@@ -4,7 +4,7 @@
 
 const LIKE_BUTTON = document.querySelectorAll('.heart');
 
-function btnClickHandler () {
+function LikeBtnHandler () {
     
     const likeCount = this.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].childNodes[1].childNodes[1]; 
 
@@ -21,5 +21,5 @@ function btnClickHandler () {
 }
 
 for (let i=0; i < LIKE_BUTTON.length; i++) {
-    LIKE_BUTTON[i].addEventListener('click',btnClickHandler);
+    LIKE_BUTTON[i].addEventListener('click',LikeBtnHandler);
 }
