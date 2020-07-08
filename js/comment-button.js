@@ -4,23 +4,22 @@
 
 const COMMENT_ADD = document.querySelectorAll('.comment_input_text');
 
-function commentHandler() {   
+function commentHandler() {
 
    if(window.event.keyCode === 13){     
       const newComment = this.value;
       
       const commentList = this.parentNode.parentNode.parentNode.childNodes[7];       
       
-      const newDiv = document.createElement("div");      
+      const commentNewDiv = document.createElement("div");      
       
-      newDiv.classList.add('main_feed_comment');
-      commentList.append(newDiv);
-      newDiv.innerHTML = `<span class="name">yoo.__.oong </span><span>${newComment}</span>`;      
-
+      commentNewDiv.classList.add('main_feed_comment');
+      commentList.append(commentNewDiv);
+      commentNewDiv.innerHTML = `<span class="name">yoo.__.oong </span><span>${newComment}</span>`;      
+      
       this.value = '';    
       this.blur();
-   }
-
+   } 
 }
 
 for (let i = 0; i < COMMENT_ADD.length; i++){   
