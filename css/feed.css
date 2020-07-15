@@ -191,12 +191,16 @@
 
 .main_feed_img {
     display: none;
-    animation: 0.8s fade;
+    animation: 0.5s fade;
+}
+
+.show {
+    display: flex;
 }
 
 @keyframes fade {
     from {
-        opacity: .6
+        opacity: .8
     } 
     90% {
         opacity: 1
