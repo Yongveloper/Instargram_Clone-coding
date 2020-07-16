@@ -13,7 +13,8 @@
     <script defer src="js/like_button.js"></script>
     <script defer src="js/comment-button.js"></script>
     <script defer src="js/feed_img_slider.js"></script>
-    <title>Yongstargram</title>
+    <script defer src="js/story_slider.js"></script>
+    <title>Yongstagram</title>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         <section class="navbar_section">
             <div class="navbar_container">
                 <div class="navbar_logo">
-                    <h1>Yongstargram</h1>
+                    <h1>Yongstagram</h1>
                 </div>
                 <div class="navbar_search">
                     <input class="navbar_search_input" type="text" placeholder="&#xf002; 검색" />
@@ -57,13 +58,14 @@
                 <!-- Feed Story -->
                 <div class="main_story">
                     <!-- Story 1 -->
-                    <div class="main_story_list">
+                    <div class="main_story_contents">
+                        <div class="main_story_slider">
                         <div class="main_story_img_list">
                             <div class="story_profile_img">
                                 <img src="images/story_profile_img/깐돌프사.jpeg" />
                             </div>
                             <div class="story_profile_name small_name">
-                                Kkandol123
+                                Kkandol1..
                             </div>
                         </div>
                         <!-- Story 2 -->
@@ -99,7 +101,7 @@
                                 <img src="images/story_profile_img/ben.jpg" />
                             </div>
                             <div class="story_profile_name small_name">
-                                mignonben
+                                mignonb..
                             </div>
                         </div>
                         <!-- Story 6 -->
@@ -108,7 +110,7 @@
                                 <img src="images/story_profile_img/duho.jpg" />
                             </div>
                             <div class="story_profile_name small_name">
-                                fighter_duho
+                                fighter_d..
                             </div>
                         </div>
                         <!-- Story 7 -->
@@ -120,7 +122,38 @@
                                 richgood3
                             </div>
                         </div>
+                        <!-- Story 8 -->
+                        <div class="main_story_img_list">
+                            <div class="story_profile_img">
+                                <img src="images/story_profile_img/simsn.jpg" />
+                            </div>
+                            <div class="story_profile_name small_name">
+                                richgood3
+                            </div>
+                        </div>
+                        <!-- Story 9 -->
+                        <div class="main_story_img_list">
+                            <div class="story_profile_img">
+                                <img src="images/story_profile_img/simsn.jpg" />
+                            </div>
+                            <div class="story_profile_name small_name">
+                                richgood3
+                            </div>
+                        </div>
+                        <!-- Story 10 -->
+                        <div class="main_story_img_list">
+                            <div class="story_profile_img">
+                                <img src="images/story_profile_img/simsn.jpg" />
+                            </div>
+                            <div class="story_profile_name small_name">
+                                richgood3
+                            </div>
+                        </div>
+                        </div>                        
                     </div>
+                    <!-- Story Angle Btn -->
+                    <i class="fas fa-angle-double-left" id="story_prev_btn" style="display:none"></i>
+                    <i class="fas fa-angle-double-right" id="story_next_btn"></i>
                 </div>
                 <!-- Feed Info -->
                 <div class="main_feed_info">
@@ -490,7 +523,7 @@
                                         <span class="name">imcodingman</span>
                                     </div>
                                     <div class="recommend_info">
-                                        <span class="small_name rec_follower">Yongstargram 신규 가입</span>
+                                        <span class="small_name rec_follower">Yongstrgram 신규 가입</span>
                                     </div>
                                 </div>
                             </div>
@@ -587,7 +620,7 @@
                         <p>개인정보처리방침·약관·위치·인기 계정·해시 태그·언어</p>
                     </div>
                     <div class="footer_footer_since">
-                        <span>©2020 YONGSTARGRAM FROM FACEBOOK</span>
+                        <span>©2020 YONGSTAGRAM FROM FACEBOOK</span>
                     </div>
                 </div>
             </footer>
