@@ -84,4 +84,5 @@ class MymySlider {
   new MymySlider('feed_img_slider2');
   // 세 번째 슬라이드를 만듦.
   new MymySlider('feed_img_slider3');
-  
+  // 네 번째 슬라이드를 만듦.
+  new MymySlider('feed_img_slider4');

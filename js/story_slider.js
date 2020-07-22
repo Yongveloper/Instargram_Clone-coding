@@ -15,7 +15,7 @@ const slideSpeed = 300;
 // 현재 인덱스 값 0으로 초기화
 let curIndex = 0;
 // 종료값 설정
-const endNum = 3;
+const endIndex = 3;
 
 function slideHandler() {
     // transition 속도 설정 
@@ -37,7 +37,7 @@ function slideHandler() {
         storyPrevBtn.style.display = 'block';        
     }
 
-    if(curIndex === endNum) {
+    if(curIndex === endIndex) {
         // 현재 인덱스 값이 끝값이랑 같을 경우 next 버튼 숨김
         storyNextBtn.style.display = 'none';
     }else {
