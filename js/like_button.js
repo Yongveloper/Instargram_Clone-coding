@@ -10,8 +10,8 @@ function stringNumberToInt(stringNumber){
     return parseInt(stringNumber.replace(/,/g , ''));
 }
 // 천 자리 콤마 함수
-function numberFormat(likeCount) {
-    return likeCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+function numberFormat(inputNumber) {
+    return inputNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
  }
 
 // 좋아요 기능 구현 함수
