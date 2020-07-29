@@ -16,7 +16,7 @@ function numberFormat(inputNumber) {
 
 // 좋아요 기능 구현 함수
 function LikeBtnHandler () {
-    // 각각 다른 컨테이너에서 사용하기 위해 this의 부모,자식 요소로 잡음
+    // 각각 다른 컨테이너에서 사용하기 위해 '좋아요 갯수'를 this의 부모,자식 요소로 잡음
     const likeCount = this.parentNode.parentNode.parentNode.childNodes[3].childNodes[1].childNodes[1].childNodes[1];
     // 좋아요 갯수를 문자에서 정수로 변환
     const likeCountInt = stringNumberToInt(likeCount.innerHTML);
@@ -35,8 +35,12 @@ function LikeBtnHandler () {
     
 }
 
-// 여러개의 버튼 중 하나만 사용하기 위함
+/* 여러개의 버튼 중 하나만 사용하기 위함
 for (let i=0; i < LIKE_BUTTON.length; i++) {
     // 하트버튼 클릭시 함수 실행
     LIKE_BUTTON[i].addEventListener('click',LikeBtnHandler);
 }
+*/
+
+// 클릭되는 각 좋아요 버튼을 찾기 위한 forEach 
+LIKE_BUTTON.forEach((likeBtn) => likeBtn.addEventListener('click',LikeBtnHandler));

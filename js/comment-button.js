@@ -28,8 +28,6 @@ function commentHandler() {
       this.blur();
    } 
 }
-// 많은 댓글 입력창 요소 중 사용에 필요한 입력창 하나만 얻기 위한 for문
-for (let i = 0; i < COMMENT_ADD.length; i++){ 
-   // key가 눌렸을 시 commentHandler 함수 실행  
-   COMMENT_ADD[i].addEventListener('keydown',commentHandler);
-}
+
+// 많은 댓글 입력창 요소 중 사용에 필요한 입력창 하나만 얻기 위한 forEach
+COMMENT_ADD.forEach((comment) => comment.addEventListener('keydown',commentHandler));
