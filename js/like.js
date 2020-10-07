@@ -35,12 +35,5 @@ function likeBtnHandler () {
     
 }
 
-/* 여러개의 버튼 중 하나만 사용하기 위함
-for (let i=0; i < LIKE_BUTTON.length; i++) {
-    // 하트버튼 클릭시 함수 실행
-    LIKE_BUTTON[i].addEventListener('click',LikeBtnHandler);
-}
-*/
-
 // 클릭되는 각 좋아요 버튼을 찾기 위한 forEach 
 LIKE_BUTTON.forEach((likeBtn) => likeBtn.addEventListener('click',likeBtnHandler));
