@@ -8,12 +8,10 @@ const COMMENT_ADD = document.querySelectorAll('.comment_input_text');
 function commentHandler() {
    // 눌린 key가 enter일 시  실행
    if(window.event.keyCode === 13){
-      if(!this.value || this.innerText == ''){
-         this.value = '';
+      if(!this.value ){         
          this.blur();
          return;
-      }
-      console.log(this.innerText);
+      }      
       // 댓글 입력창에 입력된 문자들    
       const newComment = this.value;
       // 댓글 리스트
