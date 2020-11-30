@@ -44,7 +44,7 @@ class MymySlider {
     }
     goToSlide(index) {
       // 모든 슬라이드 요소를 반복.
-      this.slideElements.forEach(function (el, i) {
+      this.slideElements.forEach((el, i) => {
         // 반복 중 슬라이드가 입력받은 번호(index)라면 보이는 클래스를 추가해서 나타나게.
         if (i === index) {
           el.classList.add('show');
