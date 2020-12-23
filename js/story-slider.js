@@ -23,12 +23,10 @@ function slideHandler() {
   // next 버튼이 클릭 되었을 시
   if (this.id === 'story_next_btn') {
     //storyList의 화면을 왼쪽으로 사진 넓이 + 인덱스+= 만큼 이동
-    storyList.style.transform =
-      'translate3d(-' + storyWidth * (curIndex += 1) + 'px, 0px, 0px)';
+    storyList.style.transform = 'translate3d(-' + storyWidth * (curIndex += 1) + 'px, 0px, 0px)';
   } else {
     //storyList의 화면을 왼쪽으로 사진 넓이 + 인덱스-= 만큼 이동
-    storyList.style.transform =
-      'translate3d(-' + (storyWidth * (curIndex -= 1) + 'px, 0px, 0px)');
+    storyList.style.transform = 'translate3d(-' + (storyWidth * (curIndex -= 1) + 'px, 0px, 0px)');
   }
 
   if (curIndex === 0) {

@@ -34,6 +34,4 @@ function commentHandler() {
 }
 
 // 많은 댓글 입력창 요소 중 사용에 필요한 입력창 하나만 얻기 위한 forEach
-COMMENT_ADD.forEach((comment) =>
-  comment.addEventListener('keydown', commentHandler)
-);
+COMMENT_ADD.forEach((comment) => comment.addEventListener('keydown', commentHandler));

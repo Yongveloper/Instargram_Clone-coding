@@ -19,27 +19,17 @@ class MymySlider {
     // 기본 요소를 검색
     this.element = document.getElementById(this.selector);
     // 컨테이너 역할의 요소를 검색.
-    this.containerElement = this.element.querySelector(
-      '.main_feed_img_container'
-    );
+    this.containerElement = this.element.querySelector('.main_feed_img_container');
     // 컨테이너 요소의 크기를 옵션에서 따로 받거나 기본값을 사용
     this.containerElement.style.maxwidth = (this.options.width || 600) + 'px';
     this.containerElement.style.maxheight = (this.options.height || 600) + 'px';
     // 실제 슬라이드될 요소들을 검색
-    this.slideElements = this.element.querySelectorAll(
-      '.main_feed_img_container .main_feed_img'
-    );
+    this.slideElements = this.element.querySelectorAll('.main_feed_img_container .main_feed_img');
     // 이전/다음 버튼 요소들을 검색
-    this.prevElement = this.element.querySelector(
-      '.main_feed_img_button .main_feed_img_prev'
-    );
-    this.nextElement = this.element.querySelector(
-      '.main_feed_img_button .main_feed_img_next'
-    );
+    this.prevElement = this.element.querySelector('.main_feed_img_button .main_feed_img_prev');
+    this.nextElement = this.element.querySelector('.main_feed_img_button .main_feed_img_next');
     // 슬라이드 요소의 개수를 파악
-    this.slideLength = this.element.querySelectorAll(
-      '.main_feed_img_container .main_feed_img'
-    ).length;
+    this.slideLength = this.element.querySelectorAll('.main_feed_img_container .main_feed_img').length;
     // 각 버튼에 이벤트를 등록
     // 아래 이벤트 등록할 때 화살표 함수는 필수!(현재 코드 구조에서만..)
     // 화살표 함수 안의 this는 생성될 때 위치를 참조하기 때문.
