@@ -8,9 +8,9 @@ const storyNextBtn = document.querySelector('#story_next_btn');
 const storyList = document.querySelector('.main_story_slider');
 
 // story 사진 넓이
-const storyWidth = 66;
+const STORY_WIDTH = 66;
 // transition 속도
-const slideSpeed = 300;
+const SLIDE_SPEED = 300;
 
 // 현재 인덱스 값 0으로 초기화
 let curIndex = 0;
@@ -19,14 +19,16 @@ const endIndex = 3;
 
 function slideHandler() {
   // transition 속도 설정
-  storyList.style.transition = slideSpeed + 'ms';
+  storyList.style.transition = `${SLIDE_SPEED}ms`;
   // next 버튼이 클릭 되었을 시
   if (this.id === 'story_next_btn') {
+    const left = 'translate3d(-' + (STORY_WIDTH * (curIndex += 1) + 'px, 0px, 0px)');
     //storyList의 화면을 왼쪽으로 사진 넓이 + 인덱스+= 만큼 이동
-    storyList.style.transform = 'translate3d(-' + storyWidth * (curIndex += 1) + 'px, 0px, 0px)';
+    storyList.style.transform = left;
   } else {
+    const rigth = 'translate3d(-' + (STORY_WIDTH * (curIndex -= 1) + 'px, 0px, 0px)');
     //storyList의 화면을 왼쪽으로 사진 넓이 + 인덱스-= 만큼 이동
-    storyList.style.transform = 'translate3d(-' + (storyWidth * (curIndex -= 1) + 'px, 0px, 0px)');
+    storyList.style.transform = rigth;
   }
 
   if (curIndex === 0) {
