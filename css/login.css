@@ -21,6 +21,7 @@ main {
   background-color: var(--color-white);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .login_form {
@@ -49,8 +50,7 @@ main {
   border: none;
 }
 
-.login_button button {
-  outline: none;
+.login_button {
   border: none;
   border-radius: var(--border-radius);
   background: var(--color-light-blue);
@@ -60,9 +60,16 @@ main {
   color: var(--color-white);
   cursor: pointer;
   transition: all 200ms ease;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.login_button button:hover {
+.login_button a:visited,
+.login_button a:link {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.login_button:hover {
   background: #79c6f7;
 }
 
