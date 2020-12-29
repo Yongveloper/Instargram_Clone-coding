@@ -1,3 +1,6 @@
+@import 'login.css';
+@import 'feed.css';
+
 :root {
   /* color */
   --color-black: #000000;
@@ -25,8 +28,7 @@ body {
   padding-top: 53px;
   margin: 0;
   background-color: var(--color-white-gray);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 ul {
