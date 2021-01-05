@@ -78,11 +78,7 @@ class MySlider {
   }
 }
 
-// 첫 번째 슬라이드를 만듦.
 new MySlider('feed_img_slider1');
-// 두 번째 슬라이드를 만듦.
 new MySlider('feed_img_slider2');
-// 세 번째 슬라이드를 만듦.
 new MySlider('feed_img_slider3');
-// 네 번째 슬라이드를 만듦.
 new MySlider('feed_img_slider4');
