@@ -98,19 +98,20 @@
 
 .main_story {
   position: relative;
+  height: 100px;
   margin-bottom: 24px;
   background-color: var(--color-white);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   padding: 16px 0;
-}
-
-.main_story_contents {
   overflow: hidden;
 }
 
 .main_story_slider {
   display: flex;
+  position: absolute;
+  left: 0;
+  transition: left 0.3s ease-out;
 }
 
 #story_prev_btn,
@@ -131,6 +132,10 @@
 
 #story_next_btn {
   right: 10px;
+}
+
+.invisible {
+  display: none;
 }
 
 .main_story_img_list {

@@ -1,7 +1,7 @@
 'use strict';
 
 // '마이마이슬라이더'라는 클래스를 생성
-class MymySlider {
+class MySlider {
   constructor(id, opts) {
     // `#name`이 아닌 `name`만 받는 것에 주의
     // 아이디를 받는 것은 각 자바스크립트 클래스가 고유하게 동작하기 위한 좋은 조건
@@ -79,10 +79,10 @@ class MymySlider {
 }
 
 // 첫 번째 슬라이드를 만듦.
-new MymySlider('feed_img_slider1');
+new MySlider('feed_img_slider1');
 // 두 번째 슬라이드를 만듦.
-new MymySlider('feed_img_slider2');
+new MySlider('feed_img_slider2');
 // 세 번째 슬라이드를 만듦.
-new MymySlider('feed_img_slider3');
+new MySlider('feed_img_slider3');
 // 네 번째 슬라이드를 만듦.
-new MymySlider('feed_img_slider4');
+new MySlider('feed_img_slider4');
